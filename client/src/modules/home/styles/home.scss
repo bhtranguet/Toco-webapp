@@ -1,0 +1,71 @@
+.home-main-slider {
+  position: relative;
+  height: 100vh;
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // filter: brightness(50%);
+    &.slide-1 {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url(/images/ms_banner_img1.jpg) no-repeat center;
+      background-size: cover;
+
+      .slide-btn {
+        color: white;
+        border: 1px solid white;
+        padding: 8px 16px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    &.slide-2 {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url(/images/ms_banner_img2.webp) no-repeat center;
+      background-size: cover;
+    }
+    &.slide-3 {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url(/images/ms_banner_img4.webp) no-repeat center;
+      background-size: cover;
+    }
+    .text-one {
+      font-size: 46px;
+      letter-spacing: 1.2px;
+      text-align: center;
+      color: #d3b673;
+      font-family: "Baloo", Helvetica, Arial, sans-serif !important;
+    }
+    .slide-bold-text {
+      font-size: 54px;
+      color: #ffffff;
+      letter-spacing: 2.7px;
+      margin-bottom: 35px;
+      font-family: "Baloo", Helvetica, Arial, sans-serif !important;
+    }
+    .slide-light-text {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 5px;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0 40px;
+      padding-bottom: 42px;
+      max-width: 60%;
+    }
+    h4 {
+      margin: 0;
+    }
+    height: 100vh;
+  }
+}

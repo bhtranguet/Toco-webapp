@@ -1,0 +1,171 @@
+.product {
+  .breadcumb {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/images/breadcrumb_bg5.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    .text {
+      font-size: 36px;
+      color: #d3b673;
+      letter-spacing: 1.8px;
+      padding: 0px;
+      margin: 0px 0px 15px 0px;
+      font-family: "Baloo", Helvetica, Arial, sans-serif !important;
+      position: relative;
+      top: 50%;
+    }
+  }
+  .main {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    .side-bar {
+      min-width: 30%;
+      .menu {
+        font-size: 28px;
+        letter-spacing: 1.4px;
+        color: #d3b673;
+        text-transform: uppercase;
+        font-family: "Baloo", Helvetica, Arial, sans-serif;
+        margin-bottom: 28px;
+      }
+      .item {
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: Muli, sans-serif;
+        margin-bottom: 24px;
+      }
+    }
+    .collections {
+      .product-collection {
+        .product-collection-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 24px;
+          .title {
+            font-size: 28px;
+            letter-spacing: 1.4px;
+            color: #282828;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-family: "Baloo", Helvetica, Arial, sans-serif;
+          }
+          .view-all {
+            font-family: Muli, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #282828;
+          }
+        }
+        .product-collection-content {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .product-card {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 2px 1.5px 0px #ccc;
+            border-top: 1px solid #f1f1f1;
+            margin-bottom: 32px;
+            overflow: hidden;
+            &:hover {
+              .content {
+                top: -4px;
+              }
+              img {
+                transform: scale(1.3);
+              }
+            }
+            .image {
+              position: relative;
+              img {
+                width: 100%;
+                max-height: 230px;
+                min-height: 230px;
+                transition: transform 0.2s;
+              }
+              .sale-off {
+                position: absolute;
+                right: 8px;
+                top: 8px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: #d3b673;
+                background: #282828;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+            .content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              background: #fafafa;
+              position: relative;
+              top: 60px;
+              transition: top 0.2s;
+              .product-name {
+                max-width: 80%;
+                text-align: center;
+                font-size: 18px;
+                font-family: Muli, sans-serif;
+                color: #333333;
+                text-transform: uppercase !important;
+                margin-bottom: 32px;
+                margin-top: 8px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+              .product-price {
+                display: flex;
+                align-items: center;
+                font-family: Muli, sans-serif !important;
+                margin-bottom: 12px;
+                .sale-price {
+                  color: #d3b673;
+                  font-weight: bold !important;
+                  font-size: 18px;
+                  margin-right: 8px;
+                }
+                .origin-price {
+                  font-size: 14px;
+                  text-decoration: line-through;
+                  color: #bebebe;
+                }
+              }
+              .group-button {
+                display: flex;
+                margin-bottom: 16px;
+                .btn {
+                  padding: 8px 15px;
+                  border: 1px solid;
+                  &.btn-left {
+                    margin-right: 8px;
+                    background: #d3b673;
+                    color: white;
+                    border: 1px solid #d3b673;
+                  }
+                  &.btn-right {
+                    color: #d3b673;
+                    border: 1px solid #d3b673;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.grid {
+  * {
+    box-sizing: border-box;
+  }
+  overflow-y: overlay;
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  max-width: 100%;
+  .grid-header {
+    display: flex;
+    font-weight: bold;
+    .header-item {
+      background-color: #ecf0f5;
+      padding: 8px 24px 8px 4px;
+      border-bottom: 1px solid #e3e3e3;
+    }
+  }
+  .grid-content {
+    .grid-row {
+      display: flex;
+      cursor: pointer;
+      &.selected {
+        background-color: gray;
+        color: white;
+      }
+      .grid-cell {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 8px 24px 8px 4px;
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+  }
+}
